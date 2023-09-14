@@ -9,6 +9,6 @@ steps:
   inputs:
     azureSubscription: 'copystorageaccount'
     ScriptType: 'FilePath'
-    ScriptPath: 'script.ps1'
-    ScriptArguments: -Location 'centralindia' -ResourceGroupName 'ResourceDeployment' -TemplateFile script.ps1
+    ScriptPath: 'arm/script.ps1'
+    ScriptArguments: -Location 'centralindia' -ResourceGroupName 'ResourceDeployment' -TemplateFile arm/script.ps1
     azurePowerShellVersion: 'LatestVersion'
