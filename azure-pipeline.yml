@@ -7,7 +7,7 @@ pool:
 steps:
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: 'StorageAccountPipeline'
+    azureSubscription: 'copystorageaccount'
     ScriptType: 'FilePath'
     ScriptPath: 'script.ps1'
     ScriptArguments: -Location 'centralindia' -ResourceGroupName 'ResourceDeployment' -TemplateFile script.ps1
