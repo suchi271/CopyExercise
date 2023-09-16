@@ -18,7 +18,7 @@
             "name": "storageaccountcopy",
             "count": "[length(range(0, parameters('storageCount')))]"
         },
-        "name": "[format('storage{0}', range(0, parameters('storageCount'))[copyIndex()])]",
+        "name": "[format('suchi-storage{0}', range(0, parameters('storageCount'))[copyIndex()])]",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2023-01-01",
         "tags": {
